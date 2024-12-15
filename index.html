@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="description" content="Comparison of PhoneGap/Cordova, Flutter, and React Native." />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Hybrid Solutions Comparison</title>
+<link rel="stylesheet" href="styles.css" />
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('service-worker.js');
+    });
+  }
+</script>
+</head>
+<body>
+<header>
+  <h1>Hybrid Solutions Comparison</h1>
+</header>
+<main>
+  <section class="intro">
+    <h2>Introduction</h2>
+    <p>As our company explores ways to build mobile applications more efficiently, we are considering hybrid and cross-platform frameworks. Three leading options we have investigated are:</p>
+    <ul>
+      <li>PhoneGap/Cordova</li>
+      <li>Flutter</li>
+      <li>React Native</li>
+    </ul>
+    <p>This report summarizes key points to help management decide which technology best fits our needs.</p>
+  </section>
+
+  <section class="comparison">
+    <h2>Framework Comparison</h2>
+    <div class="comparison-grid">
+      <div class="framework-card">
+        <h3>PhoneGap / Cordova</h3>
+        <ul>
+          <li><strong>Approach:</strong> Primarily uses HTML, CSS, and JavaScript to build cross-platform apps. Wraps web code in a native shell.</li>
+          <li><strong>Performance:</strong> Performance can sometimes lag behind native, especially for complex animations or heavy computations.</li>
+          <li><strong>Community & Ecosystem:</strong> Older technology with a large ecosystem of plugins. However, newer tools are gaining more momentum.</li>
+          <li><strong>Learning Curve:</strong> Easy for web developers, as it leverages familiar web technologies.</li>
+          <li><strong>Tooling & Documentation:</strong> Mature documentation and tools, but less active modern support compared to newer frameworks.</li>
+        </ul>
+      </div>
+
+      <div class="framework-card">
+        <h3>Flutter</h3>
+        <ul>
+          <li><strong>Approach:</strong> Uses Dart and its own rendering engine to provide near-native performance and custom UI components.</li>
+          <li><strong>Performance:</strong> Excellent performance close to native, due to compiled code and a high-performance rendering engine.</li>
+          <li><strong>Community & Ecosystem:</strong> Rapidly growing ecosystem supported by Google, with a vibrant community and continuous improvements.</li>
+          <li><strong>Learning Curve:</strong> Requires learning Dart and Flutter’s widget-based architecture, but provides a cohesive development experience.</li>
+          <li><strong>Tooling & Documentation:</strong> Strong official documentation and a robust set of development tools (e.g., hot reload).</li>
+        </ul>
+      </div>
+
+      <div class="framework-card">
+        <h3>React Native</h3>
+        <ul>
+          <li><strong>Approach:</strong> Uses JavaScript (and optionally TypeScript) and React’s component model to generate native widgets on each platform.</li>
+          <li><strong>Performance:</strong> Generally good performance, though bridging JavaScript and native code may cause overhead in some scenarios.</li>
+          <li><strong>Community & Ecosystem:</strong> Backed by Facebook (Meta) with a huge community, abundant libraries, and continuous updates.</li>
+          <li><strong>Learning Curve:</strong> Familiar to React web developers; however, requires understanding mobile-specific nuances.</li>
+          <li><strong>Tooling & Documentation:</strong> Good documentation, rich ecosystem, and third-party libraries, though varying quality in some areas.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="decision-factors">
+    <h2>Key Decision Factors</h2>
+    <p>Considering the needs of our company:</p>
+    <ul>
+      <li><strong>Development Speed:</strong> If we want to leverage existing web expertise, PhoneGap/Cordova or React Native might be simpler. Flutter requires learning Dart, but provides a highly productive environment once familiar.</li>
+      <li><strong>Long-Term Support:</strong> Flutter and React Native have strong and growing communities. PhoneGap/Cordova is mature but may see less innovation going forward.</li>
+      <li><strong>Performance & UI Experience:</strong> Flutter often excels in performance and offers a cohesive UI system. React Native provides native elements but depends on a bridge. PhoneGap/Cordova might lag due to webview-based rendering.</li>
+    </ul>
+  </section>
+</main>
+
+<footer>
+  <h2>References</h2>
+  <p>
+    Flutter Official Documentation (https://flutter.dev)<br />
+    React Native Official Documentation (https://reactnative.dev)<br />
+    Apache Cordova Official Documentation (https://cordova.apache.org)<br />
+    Additional industry reports and blog posts available through: Google Developer Blog (https://developers.googleblog.com), Meta Engineering Blog (https://engineering.fb.com/), and various community-driven resources.
+  </p>
+  <p><small>This page is designed for managers evaluating hybrid app solutions.</small></p>
+</footer>
+</body>
+</html>
