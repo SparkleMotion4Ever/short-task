@@ -1,70 +1,71 @@
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  background: #f8f9fa;
-  color: #333;
-}
-
-header {
-  background: #005bb5;
-  color: #fff;
-  padding: 1rem;
-  text-align: center;
-}
-
-h1, h2, h3 {
-  margin-top: 0;
-}
-
-main {
-  padding: 1rem;
-}
-
-.intro {
-  margin-bottom: 2rem;
-}
-
-.comparison-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
-}
-
-.framework-card {
-  background: #fff;
-  border-radius: 4px;
-  box-shadow: 0 0 5px rgba(0,0,0,0.1);
-  padding: 1rem;
-}
-
-.framework-card h3 {
-  background: #005bb5;
-  color: #fff;
-  padding: 0.5rem;
-  margin: -1rem -1rem 1rem -1rem;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-}
-
-ul {
-  padding-left: 1.5rem;
-}
-
-.footer {
-  background: #005bb5;
-  color: #fff;
-  text-align: center;
-  padding: 1rem;
-}
-
-footer {
-  background: #eee;
-  padding: 1rem;
-  margin-top: 2rem;
-}
-
-@media (min-width: 768px) {
-  .comparison-grid {
-    grid-template-columns: 1fr 1fr 1fr;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f8f9fa;
+    color: #333;
   }
-}
+  
+  header {
+    background: linear-gradient(to right, #ff69b4, #87ceeb);
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  h1, h2, h3 {
+    margin-top: 0;
+  }
+  
+  main {
+    padding: 1rem;
+  }
+  
+  .intro {
+    margin-bottom: 2rem;
+  }
+  
+  .comparison-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .framework-card {
+    background: linear-gradient(to bottom, #ffdab9, #98fb98);
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    padding: 1rem;
+  }
+  
+  .framework-card h3 {
+    background: #ffa500;
+    color: #fff;
+    padding: 0.5rem;
+    margin: -1rem -1rem 1rem -1rem;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    text-align: center;
+  }
+  
+  ul {
+    padding-left: 1.5rem;
+  }
+  
+  footer {
+    background: linear-gradient(to right, #ff69b4, #87ceeb);
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  @media (min-width: 768px) {
+    .comparison-grid {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+  
